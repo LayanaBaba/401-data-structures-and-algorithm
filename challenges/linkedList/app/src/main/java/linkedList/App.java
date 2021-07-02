@@ -4,11 +4,26 @@
 package linkedList;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        var list = new LinkedList();
+
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.addLast(40);
+
+        list.addFirst(0);
+        list.addFirst(-10);
+        list.addFirst(-20);
+        list.addFirst(-30);
+
+        System.out.println(list.indexOf(10));
+        System.out.println(list.indexOf(100));
+
+        System.out.println(list.includes(10));
+        System.out.println(list.includes(100));
+
+        System.out.println(list.toString());
     }
 }
