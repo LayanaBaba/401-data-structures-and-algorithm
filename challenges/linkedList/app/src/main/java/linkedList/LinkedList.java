@@ -15,6 +15,10 @@ public class LinkedList {
     private Node first;
     private Node last;
 
+    public Integer getFirst(){
+        return first.value;
+    }
+
     public void addLast(int data){
         var node = new Node (data);
 
