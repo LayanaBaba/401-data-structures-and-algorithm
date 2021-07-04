@@ -54,6 +54,42 @@ public class LinkedList {
         return -1;
     }
 
+    public void insertBefore(int item ,int data){
+
+        var node = new Node (data);
+        var current=first;
+       while (current.next!= null){
+
+           if (current.next.value==item){
+               node.next = current.next;
+               current.next=node;
+               return;
+           }
+
+           current=current.next;
+
+       }
+
+    }
+
+    public void insertAfter(int item ,int data){
+
+        var node = new Node (data);
+        var current=first;
+        while (current.next!= null){
+
+            if (current.value==item){
+                node.next = current.next;
+                current.next=node;
+                return;
+            }
+
+            current=current.next;
+
+        }
+
+    }
+
     public boolean includes (int data){
         return indexOf(data)!=-1;
     }

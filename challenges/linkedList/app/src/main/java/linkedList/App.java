@@ -18,12 +18,18 @@ public class App {
         list.addFirst(-20);
         list.addFirst(-30);
 
-        System.out.println(list.indexOf(10));
-        System.out.println(list.indexOf(100));
+//        System.out.println(list.indexOf(10));
+//        System.out.println(list.indexOf(100));
+//
+//        System.out.println(list.includes(10));
+//        System.out.println(list.includes(100));
+//
+//        System.out.println(list.toString());
 
-        System.out.println(list.includes(10));
-        System.out.println(list.includes(100));
+        list.insertBefore(10,1000);
+        System.out.println(list.toString());
 
+        list.insertAfter(10,100);
         System.out.println(list.toString());
     }
 }
