@@ -32,7 +32,7 @@ public class App {
 //        list.insertAfter(10,100);
         System.out.println(list.toString());
 
-        list.printk( 5);
+        list.printk( 2);
 //        System.out.println(list.printk(2));
     }
 }
