@@ -26,10 +26,13 @@ public class App {
 //
 //        System.out.println(list.toString());
 
-        list.insertBefore(10,1000);
+//        list.insertBefore(10,1000);
+//        System.out.println(list.toString());
+//
+//        list.insertAfter(10,100);
         System.out.println(list.toString());
 
-        list.insertAfter(10,100);
-        System.out.println(list.toString());
+        list.printk( 5);
+//        System.out.println(list.printk(2));
     }
 }
