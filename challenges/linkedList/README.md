@@ -5,3 +5,5 @@ linked list is a linear collection of data elements whose order is not given by 
 ![Linked List](https://am3pap003files.storage.live.com/y4mo6WvcquHKiKe4HBgNpcdm2ZqwZhBrFlsyyG-gPekyeLvB-Uw9aJ0YUlwm5ysgmZewUktmNwOcq-HzI6Glzjyfxlif9aYsVOuGBrUP4OokBUGLdHZYQ3HZGXCjQkpXWqNZY5CW6OslYTJlFCAxW1H5Jzn_EgPDXcwReU_tHF8e5d_wCFy3726sUwtn1wnHGev8jm8QBtnTah4VFeuqJQ6xA/Linked%20list.png?psid=1&width=1189&height=734)
 
 ![Linked List](https://am3pap003files.storage.live.com/y4mRMt0au4vX_OjfeRlff9QTLD_ca0eS-D1jKovfseb9TzgbYzCq0t8HrReowko-a-VU_bY72bFaCwc88R-eoCBJvqFagoHMeBi1VwHgNjr6TVcM3S4ysZU2tJbGPary0n2c922SsMuGiabqrlVgOHI92_ML1_pBuaO2abR55MiswR-58aFtqAADsgu1CGqsAo7xFFQQk-2n5ggqIb_JgjSEA/ll.kthFromEnd%28k%29.png?psid=1&width=1345&height=725)
+
+![Linked List](https://am3pap003files.storage.live.com/y4mW1Zi902dIEsaWbO6MT8xhlBfAY6lzFZR4gZ2XDLNUgo1eme7CD0Oc4P9msukMWaTmPMl-WcoCxN47PRVVTJN02O2haUx17u7z8JLBZX1Q2-ckNXLYZVt7yQuXt1WcFULr1pWy8vh2YEun11Wcttaseu8uKhJv93mGm8US9a_1LYJhSbdqeLPTT0dCkw8tBhgwtvf1p5DRaUnrPxwYaimSw/zipTwolist.png?psid=1&width=1501&height=678)
