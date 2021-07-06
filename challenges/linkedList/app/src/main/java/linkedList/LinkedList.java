@@ -30,6 +30,34 @@ public class LinkedList {
         }
     }
 
+    void printk(int k) {
+        int length = 0;
+        Node current = first;
+
+        if (k < 0) {
+            System.out.println("Not Applicable");
+        } else {
+            for (int i = 0; current != last; i++) {
+                current = current.next;
+                length++;
+            }
+            current = first;
+
+            //to get kth node from the end we can also say that we want (length-k+1) node from the beginning
+            int i = 1;
+            if (k <=length) {
+                while (i < length - k + 1) {
+                    current = current.next;
+                    i++;
+                }
+                System.out.println(current.value);
+            } else {
+                System.out.println("Not Applicable");
+            }
+
+        }
+    }
+
     public void addFirst(int data){
         var node = new Node(data);
         if(first==null){
