@@ -115,4 +115,19 @@ public class LinkedListTest {
 
 //        Assertions.assertEquals();
     }
+
+    @Test
+    public void ziplistTest(){
+        var list = new LinkedList();
+        var list2 = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.addLast(40);
+
+        list2.addLast(1);
+        list2.addLast(2);
+        list2.addLast(3);
+        Assertions.assertEquals("{ 10 } -> { 1 } -> { 20 } -> { 2 } -> { 30 } -> { 40 } -> NULL",list.zipLists(list2).toString());
+    }
 }

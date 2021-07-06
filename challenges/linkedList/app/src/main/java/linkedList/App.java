@@ -7,16 +7,22 @@ public class App {
 
     public static void main(String[] args) {
         var list = new LinkedList();
+        var list2=new LinkedList();
 
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
         list.addLast(40);
 
-        list.addFirst(0);
-        list.addFirst(-10);
-        list.addFirst(-20);
-        list.addFirst(-30);
+        list2.addLast(1);
+        list2.addLast(2);
+        list2.addLast(3);
+
+
+//        list.addFirst(0);
+//        list.addFirst(-10);
+//        list.addFirst(-20);
+//        list.addFirst(-30);
 
 //        System.out.println(list.indexOf(10));
 //        System.out.println(list.indexOf(100));
@@ -31,8 +37,10 @@ public class App {
 //
 //        list.insertAfter(10,100);
         System.out.println(list.toString());
-
-        list.printk( 2);
+        System.out.println(list2.toString());
+//        list.printk( 2);
+//        list.zipLists(list2);
+        System.out.println(list.zipLists(list2));
 
     }
 }

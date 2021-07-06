@@ -134,4 +134,21 @@ public class LinkedList {
         newData+="NULL";
         return  newData;
     }
+
+    public LinkedList zipLists(LinkedList b){
+        Node current = first;
+        if(current.value == 0)return b;
+        if(b.first==null) return this;
+        zipLists(this.first,b.first);
+        return this;
+    }
+    private void zipLists(Node a, Node b){
+        Node firstList = a.next;
+        Node secondList = b.next;
+        if(firstList == null) return;
+        if(secondList == null) return;
+        a.next = b;
+        b.next = firstList;
+        zipLists(firstList,secondList);
+    }
 }
