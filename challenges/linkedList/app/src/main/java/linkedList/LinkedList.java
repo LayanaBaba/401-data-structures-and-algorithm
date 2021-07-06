@@ -45,7 +45,7 @@ public class LinkedList {
 
             //to get kth node from the end we can also say that we want (length-k+1) node from the beginning
             int i = 1;
-            if (k < length) {
+            if (k <=length) {
                 while (i < length - k + 1) {
                     current = current.next;
                     i++;

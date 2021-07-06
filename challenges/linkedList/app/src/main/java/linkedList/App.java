@@ -33,6 +33,6 @@ public class App {
         System.out.println(list.toString());
 
         list.printk( 2);
-//        System.out.println(list.printk(2));
+
     }
 }
