@@ -3,20 +3,26 @@
  */
 package linkedList;
 
+import org.w3c.dom.Node;
+
 public class App {
+
 
     public static void main(String[] args) {
         var list = new LinkedList();
         var list2=new LinkedList();
+        var list3=new LinkedList();
 
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
         list.addLast(40);
 
-        list2.addLast(1);
-        list2.addLast(2);
-        list2.addLast(3);
+
+
+//        list2.addLast(1);
+//        list2.addLast(2);
+//        list2.addLast(3);
 
 
 //        list.addFirst(0);
@@ -37,10 +43,12 @@ public class App {
 //
 //        list.insertAfter(10,100);
         System.out.println(list.toString());
-        System.out.println(list2.toString());
+//        System.out.println(list2.toString());
 //        list.printk( 2);
 //        list.zipLists(list2);
-        System.out.println(list.zipLists(list2));
+//        System.out.println(list.zipLists(list2));
+
+       // System.out.println(list3.reverseList());
 
     }
 }
