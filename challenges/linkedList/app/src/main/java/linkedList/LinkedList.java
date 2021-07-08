@@ -1,6 +1,11 @@
 package linkedList;
 
+import org.w3c.dom.Node;
+
 public class LinkedList {
+
+
+
 
     private class Node{
         private Integer value;
@@ -8,6 +13,7 @@ public class LinkedList {
 
         public Node (int value){
             this.value =  value;
+
         }
     }
 
@@ -86,17 +92,17 @@ public class LinkedList {
 
         var node = new Node (data);
         var current=first;
-       while (current.next!= null){
+        while (current.next!= null){
 
-           if (current.next.value==item){
-               node.next = current.next;
-               current.next=node;
-               return;
-           }
+            if (current.next.value==item){
+                node.next = current.next;
+                current.next=node;
+                return;
+            }
 
-           current=current.next;
+            current=current.next;
 
-       }
+        }
 
     }
 
@@ -151,4 +157,76 @@ public class LinkedList {
         b.next = firstList;
         zipLists(firstList,secondList);
     }
+
+    public LinkedList reverseList(LinkedList ll) {
+        LinkedList reversed = new LinkedList ();
+        Node fisrt = ll.first;
+        while (fisrt != null) {
+            reversed.insertAfter(fisrt);
+            fisrt = fisrt.next;
+        }
+        return reversed;
+
+    }
+
+//    public void reverseList(Node node) {
+//        Node curr = first;
+//        Node pre = null;
+//        Node incoming = null;
+//
+//        while (curr != null) {
+//            incoming = curr.next;   // store incoming item
+//
+//            curr.next = pre;        // swap nodes
+//            pre = curr;             // increment also pre
+//
+//            curr = incoming;        // increment current
+//        }
+//
+//        first = pre; // pre is the latest item where
+//        // curr is null
+//        reverseList(incoming);
+//    }
+//    Node reverseListRecursive(Node head) {
+//        if (head == null) {
+//            return null;
+//        }
+//        if (head.next == null) {
+//            return head;
+//        }
+//        Node node = reverseListRecursive(head.next);
+//        head.next=head;
+//        head=null;
+//        return node;
+//    }
+
+//    Node reverseList(Node head) {
+//        Node previous = null;
+//        Node current = head;
+//        while (current != null) {
+//            Node nextElement = current.next;
+//            current.next=previous;
+//            previous = current;
+//            current = nextElement;
+//        }
+//        return previous;
+//    }
+
+//    Node reverse(Node node)
+//    {
+//        Node prev = null;
+//        Node current = node;
+//        Node next = null;
+//        while (current != null) {
+//            next = current.next;
+//            current.next = prev;
+//            prev = current;
+//            current = next;
+//        }
+//        node = prev;
+//        return node;
+//    }
+
+
+
 }
