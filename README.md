@@ -8,3 +8,4 @@
 |    Challenge 2        |[Array Insert Shift](challenges/array-insert-shift/array-insert-shift.md) |
 |    Challenge 3        |[Array Binary Search](array-binary-search/array-binary-search.md)         |
 |    Challenge 6        |[Linked List Inheritance](challenges/linkedList/README.md)                |
+|    Challenge 10       |[ٍStack and Queue](challenges/linkedList/README.md)                        |
