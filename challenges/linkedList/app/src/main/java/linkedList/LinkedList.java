@@ -158,16 +158,16 @@ public class LinkedList {
         zipLists(firstList,secondList);
     }
 
-    public LinkedList reverseList(LinkedList ll) {
-        LinkedList reversed = new LinkedList ();
-        Node fisrt = ll.first;
-        while (fisrt != null) {
-            reversed.insertAfter(fisrt);
-            fisrt = fisrt.next;
-        }
-        return reversed;
-
-    }
+//    public LinkedList reverseList(LinkedList ll) {
+//        LinkedList reversed = new LinkedList ();
+//        Node fisrt = ll.first;
+//        while (fisrt != null) {
+//            reversed.insertAfter(fisrt);
+//            fisrt = fisrt.next;
+//        }
+//        return reversed;
+//
+//    }
 
 //    public void reverseList(Node node) {
 //        Node curr = first;
@@ -212,8 +212,7 @@ public class LinkedList {
 //        return previous;
 //    }
 
-//    Node reverse(Node node)
-//    {
+//    public void reverse(Node node) {
 //        Node prev = null;
 //        Node current = node;
 //        Node next = null;
@@ -224,7 +223,7 @@ public class LinkedList {
 //            current = next;
 //        }
 //        node = prev;
-//        return node;
+//
 //    }
 
 
