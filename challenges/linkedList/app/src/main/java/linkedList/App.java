@@ -18,8 +18,6 @@ public class App {
         list.addLast(30);
         list.addLast(40);
 
-
-
 //        list2.addLast(1);
 //        list2.addLast(2);
 //        list2.addLast(3);

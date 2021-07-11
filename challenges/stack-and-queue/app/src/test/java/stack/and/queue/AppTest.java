@@ -133,4 +133,48 @@ class AppTest {
 
         assertEquals("Empty Queue.",queue.peek());
     }
+
+    @Test
+    public void enqueueStack(){
+        StackQueuePseudo<java.io.Serializable> stackQueuePseudo= new StackQueuePseudo<>();
+
+        stackQueuePseudo.enqueue(111);
+        stackQueuePseudo.enqueue(222);
+        stackQueuePseudo.enqueue(333);
+        assertEquals("333 --> 222 --> 111 --> Null",stackQueuePseudo.toStringStack());
+    }
+
+    @Test
+    public void dequeueStack(){
+        StackQueuePseudo<java.io.Serializable> stackQueuePseudo= new StackQueuePseudo<>();
+
+        stackQueuePseudo.enqueue(111);
+        stackQueuePseudo.enqueue(222);
+        stackQueuePseudo.enqueue(333);
+        stackQueuePseudo.dequeue();
+        assertEquals("111",stackQueuePseudo.toStringStack2());
+    }
+
+    @Test
+    public void enqueueStackFailure(){
+        StackQueuePseudo<java.io.Serializable> stackQueuePseudo= new StackQueuePseudo<>();
+
+        stackQueuePseudo.enqueue(111);
+        stackQueuePseudo.enqueue(222);
+        stackQueuePseudo.enqueue(333);
+        assertNotEquals(" 333 --> 222 --> 111 --> Null",stackQueuePseudo.toStringStack());
+    }
+
+    @Test
+    public void dequeueStackFailure(){
+        StackQueuePseudo<java.io.Serializable> stackQueuePseudo= new StackQueuePseudo<>();
+
+        stackQueuePseudo.enqueue(111);
+        stackQueuePseudo.enqueue(222);
+        stackQueuePseudo.enqueue(333);
+        stackQueuePseudo.dequeue();
+        assertNotEquals("333",stackQueuePseudo.toStringStack2());
+    }
+
+
 }

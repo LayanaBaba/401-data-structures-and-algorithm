@@ -7,29 +7,29 @@ public class App {
 
     public static void main(String[] args) {
 
-       Stack<java.io.Serializable> stack= new Stack<>();
+//       Stack<java.io.Serializable> stack= new Stack<>();
+//
+//       stack.push(111);
+//        stack.push(222);
+//        stack.push(333);
+//        stack.push(444);
+//
+//        System.out.println(stack.toString()+ " Stack");
+////
+//        System.out.println(stack.pop());
+////        System.out.println(stack.pop());
+////        System.out.println(stack.peek());
+//
+//        System.out.println(stack.toString());
 
-       stack.push(111);
-        stack.push(222);
-        stack.push(333);
-        stack.push(444);
-
-        System.out.println(stack.toString());
-
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.peek());
-
-        System.out.println(stack.toString());
-
-        System.out.println(stack.isEmpty());
+//        System.out.println(stack.isEmpty());
 
 //        Queue<java.io.Serializable> queue=new Queue<>();
 //        queue.enqueue(111);
 //        queue.enqueue(222);
 //        queue.enqueue(333);
 //        queue.enqueue(444);
-//        System.out.println(queue.toString());
+//        System.out.println(queue.toString()+ " Queue");
 
 //        System.out.println(queue.dequeue());
 //        System.out.println(queue.dequeue());
@@ -38,5 +38,17 @@ public class App {
 //        System.out.println(queue.isEmpty());
 
 //        System.out.println(queue.toString());
+
+        StackQueuePseudo<java.io.Serializable> stackQueuePseudo= new StackQueuePseudo();
+        stackQueuePseudo.enqueue(111);
+        stackQueuePseudo.enqueue(222);
+        stackQueuePseudo.enqueue(333);
+        stackQueuePseudo.enqueue(444);
+        stackQueuePseudo.enqueue(555);
+        System.out.println(stackQueuePseudo.toStringStack());
+
+        stackQueuePseudo.dequeue();
+        System.out.println(stackQueuePseudo.toStringStack2());
+
     }
 }
