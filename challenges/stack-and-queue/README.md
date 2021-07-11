@@ -25,3 +25,18 @@
 4- Peek - When you peek you will view the value of the front Node in the queue. If called when the queue is empty an exception will be raised.
 
 5- IsEmpty - returns true when queue is empty otherwise returns false.
+
+## stack-queue-pseudo
+
+### Challenge Summary
+
+Enqueue : Inserts value into the PseudoQueue, using a first-in, first-out approach.
+
+Dequeue : Extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
+
+### Whiteboard Process
+
+![whiteboard](https://am3pap003files.storage.live.com/y4m-NdHmjUo-lyFKIkn_J_4LKj-1IPhQuRw-V7teNvG07Z4w-nMWJlZuYWSuk9yxGAp2-qvxhbkq0l0DbyGiGC3FuT2V1hCo3-uGNq-hFuMXeiQJVF2EqPDl15jTZRW2NBo6khxnvrUwOq8KgZH__cJ0NDIrLDL3bwMWgzHvgwfLVfzt56XpYaNl9rTTUmOfapJ6K1HfUVERTKi1eUGXkaD2Q/2021-07-11%20%283%29.png?psid=1&width=1609&height=679)
+
+
