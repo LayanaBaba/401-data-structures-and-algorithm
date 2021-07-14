@@ -3,7 +3,11 @@
  */
 package stack.and.queue;
 
+import org.checkerframework.checker.units.qual.C;
+
 public class App {
+    private static  Shelter shelterCat= new Shelter();
+    private static  Shelter shelterDog= new Shelter();
 
     public static void main(String[] args) {
 
@@ -39,16 +43,38 @@ public class App {
 
 //        System.out.println(queue.toString());
 
-        StackQueuePseudo<java.io.Serializable> stackQueuePseudo= new StackQueuePseudo();
-        stackQueuePseudo.enqueue(111);
-        stackQueuePseudo.enqueue(222);
-        stackQueuePseudo.enqueue(333);
-        stackQueuePseudo.enqueue(444);
-        stackQueuePseudo.enqueue(555);
-        System.out.println(stackQueuePseudo.toStringStack());
+//        StackQueuePseudo<java.io.Serializable> stackQueuePseudo= new StackQueuePseudo();
+//        stackQueuePseudo.enqueue(111);
+//        stackQueuePseudo.enqueue(222);
+//        stackQueuePseudo.enqueue(333);
+//        stackQueuePseudo.enqueue(444);
+//        stackQueuePseudo.enqueue(555);
+//        System.out.println(stackQueuePseudo.toStringStack());
+//
+//        stackQueuePseudo.dequeue();
+//        System.out.println(stackQueuePseudo.toStringStack2());
 
-        stackQueuePseudo.dequeue();
-        System.out.println(stackQueuePseudo.toStringStack2());
+/////////////////////////////////////////////////////////////////////////////////////
 
+        Dog dog1 = new Dog("dog1");
+        Dog dog2 = new Dog("dog2");
+        Dog dog3 = new Dog("dog3");
+
+        Cat cat1 = new Cat("cat1");
+        Cat cat2 = new Cat("cat2");
+        Cat cat3 = new Cat("cat3");
+
+        shelterDog.enqueue(dog1);
+        shelterCat.enqueue(cat1);
+        shelterDog.enqueue(dog2);
+        shelterCat.enqueue(cat2);
+        shelterDog.enqueue(dog3);
+        shelterCat.enqueue(cat3);
+
+        System.out.println(shelterCat);
+        System.out.println(shelterDog);
+
+        String animalDog1 = shelterDog.dequeue("dog");
+        System.out.println(animalDog1);
     }
 }
