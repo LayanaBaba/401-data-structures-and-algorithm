@@ -39,4 +39,17 @@ Dequeue : Extracts a value from the PseudoQueue, using a first-in, first-out app
 
 ![whiteboard](https://am3pap003files.storage.live.com/y4m-NdHmjUo-lyFKIkn_J_4LKj-1IPhQuRw-V7teNvG07Z4w-nMWJlZuYWSuk9yxGAp2-qvxhbkq0l0DbyGiGC3FuT2V1hCo3-uGNq-hFuMXeiQJVF2EqPDl15jTZRW2NBo6khxnvrUwOq8KgZH__cJ0NDIrLDL3bwMWgzHvgwfLVfzt56XpYaNl9rTTUmOfapJ6K1HfUVERTKi1eUGXkaD2Q/2021-07-11%20%283%29.png?psid=1&width=1609&height=679)
 
+## stack-queue-animal-shelter
+
+### Challenge Summary
+
+Animal  holds only dogs and cats that want to store the new animals.
+I used enqueue method from Queue class, to add the animal into queue.
+I used the dequeue method from Queue class, to get the first animal that stored.
+
+
+### Whiteboard Process
+
+![whiteboard](https://am3pap003files.storage.live.com/y4mvCst5Mtt60Ev6q6e-tQraQcwjPGYu4o9Hts4tjjfEGBEsPBV53p4-oAxbKVE9cP9LRC_dvK2x1xExOwATXfsRAauc5GfRwLU_JCerAsY0n4dAWhSJTzFtSztETZ807AhIAFy17Wr1FU3y3M0Bx9xDmSfMecpVZpwyVoIzXxwwTmJqJjfnqwD7QIy_iD_gesowhGIVhkcQIevSC3VuXeY9w/challenge%2012.png?psid=1&width=1623&height=639)
+
 
