@@ -11,3 +11,4 @@
 |    Challenge 10       |[ٍStack and Queue](challenges/stack-and-queue/README.md)                   |
 |    Challenge 11       |[ٍstack-queue-pseudo](challenges/stack-and-queue/README.md)                   |
 |    Challenge 12       |[ٍstack-queue-AnimalShelter](challenges/stack-and-queue/README.md)                   |
+|    Challenge 13       |[ٍstack-queue-brackets](challenges/stack-and-queue/README.md)                   |
