@@ -52,4 +52,14 @@ I used the dequeue method from Queue class, to get the first animal that stored.
 
 ![whiteboard](https://am3pap003files.storage.live.com/y4mvCst5Mtt60Ev6q6e-tQraQcwjPGYu4o9Hts4tjjfEGBEsPBV53p4-oAxbKVE9cP9LRC_dvK2x1xExOwATXfsRAauc5GfRwLU_JCerAsY0n4dAWhSJTzFtSztETZ807AhIAFy17Wr1FU3y3M0Bx9xDmSfMecpVZpwyVoIzXxwwTmJqJjfnqwD7QIy_iD_gesowhGIVhkcQIevSC3VuXeY9w/challenge%2012.png?psid=1&width=1623&height=639)
 
+## stack-queue-brackets
+
+### Challenge Summary
+
+Create a method to check if a given string is balanced or not, and return Boolean representing whether or not the brackets in the string are balanced
+
+
+### Whiteboard Process
+
+![whiteboard](https://am3pap003files.storage.live.com/y4mh7p2WiHbXXelGQ2-ws8nXDuI7dadrYUKYvJR8sfr2u9UiMHLxv45q_eGRmBNgecTKpgSMurTt_mAA9XNx9Tvid-Eg9rqPssIaJVrQyTO-blfwg4bCkd2Xevsqv5hw05zgRc4yRalQNcMfO6YJb2dlSD9b-aOjMrfwcldOpHGvVf2lL0qHQbFLXhp06dE0wHGeTjRDkV3RHjbRLD5a9rSnA/cc%2013.png?psid=1&width=1272&height=676)
 
