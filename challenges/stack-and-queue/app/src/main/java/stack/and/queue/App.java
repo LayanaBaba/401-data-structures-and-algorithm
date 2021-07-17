@@ -56,25 +56,39 @@ public class App {
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-        Dog dog1 = new Dog("dog1");
-        Dog dog2 = new Dog("dog2");
-        Dog dog3 = new Dog("dog3");
+//        Dog dog1 = new Dog("dog1");
+//        Dog dog2 = new Dog("dog2");
+//        Dog dog3 = new Dog("dog3");
+//
+//        Cat cat1 = new Cat("cat1");
+//        Cat cat2 = new Cat("cat2");
+//        Cat cat3 = new Cat("cat3");
+//
+//        shelterDog.enqueue(dog1);
+//        shelterCat.enqueue(cat1);
+//        shelterDog.enqueue(dog2);
+//        shelterCat.enqueue(cat2);
+//        shelterDog.enqueue(dog3);
+//        shelterCat.enqueue(cat3);
+//
+//        System.out.println(shelterCat);
+//        System.out.println(shelterDog);
+//
+//        String animalDog1 = shelterDog.dequeue("dog");
+//        System.out.println(animalDog1);
 
-        Cat cat1 = new Cat("cat1");
-        Cat cat2 = new Cat("cat2");
-        Cat cat3 = new Cat("cat3");
+        //////////////////////////////////////////////////////////////////
 
-        shelterDog.enqueue(dog1);
-        shelterCat.enqueue(cat1);
-        shelterDog.enqueue(dog2);
-        shelterCat.enqueue(cat2);
-        shelterDog.enqueue(dog3);
-        shelterCat.enqueue(cat3);
+        BracketValidation bracketValidation=new BracketValidation();
 
-        System.out.println(shelterCat);
-        System.out.println(shelterDog);
-
-        String animalDog1 = shelterDog.dequeue("dog");
-        System.out.println(animalDog1);
+        System.out.println(bracketValidation.validateBrackets("{}"));
+        System.out.println(bracketValidation.validateBrackets("{}(){}"));
+        System.out.println(bracketValidation.validateBrackets("()[[Extra Characters]]"));
+        System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
+        System.out.println(bracketValidation.validateBrackets("{}{Code}[Fellows](())"));
+        System.out.println(bracketValidation.validateBrackets("[({}]"));
+        System.out.println(bracketValidation.validateBrackets("[({}]"));
+        System.out.println(bracketValidation.validateBrackets("{(})"));
+        System.out.println(bracketValidation.validateBrackets("(]("));
     }
 }

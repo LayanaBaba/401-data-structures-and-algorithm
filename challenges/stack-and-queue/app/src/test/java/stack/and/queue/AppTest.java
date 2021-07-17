@@ -206,4 +206,21 @@ class AppTest {
         assertNotEquals("Dog{name='dog3'} --> Dog{name='dog2'} --> Dog{name='dog1'} --> Null",shelterDog.toString());
         assertNotEquals("Cat{name='cat3'} --> Cat{name='cat2'} --> Cat{name='cat1'} --> Null",shelterCat.toString());
     }
+
+    @Test
+    public void BracketValidationTest(){
+        BracketValidation bracketValidation=new BracketValidation();
+
+        assertTrue(bracketValidation.validateBrackets("{}"));
+        assertTrue(bracketValidation.validateBrackets("{}(){}"));
+        assertTrue(bracketValidation.validateBrackets("()[[Extra Characters]]"));
+        assertTrue(bracketValidation.validateBrackets("(){}[[]]"));
+        assertTrue(bracketValidation.validateBrackets("{}{Code}[Fellows](())"));
+        assertFalse(bracketValidation.validateBrackets("[({}]"));
+        assertFalse(bracketValidation.validateBrackets("[({}]"));
+        assertFalse(bracketValidation.validateBrackets("{(})"));
+        assertFalse(bracketValidation.validateBrackets("(]("));
+
+
+    }
 }
