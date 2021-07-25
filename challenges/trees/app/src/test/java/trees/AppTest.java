@@ -74,4 +74,40 @@ class AppTest {
         assertEquals("[20, 30, 10]",binaryTree.getPostOrder()+"");
 
     }
+
+    @Test
+    public void findMax(){
+        BinaryTree binaryTree= new BinaryTree();
+
+        binaryTree.setRoot(new Node(300));
+        binaryTree.getRoot().setLeft(new Node(2));
+        binaryTree.getRoot().setRight(new Node(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node(4));
+        binaryTree.getRoot().getLeft().setRight(new Node (67));
+        binaryTree.getRoot().getLeft().setLeft(new Node(50));
+        binaryTree.getRoot().getLeft().setRight(new Node(200));
+        binaryTree.getRoot().getRight().setLeft(new Node(150));
+        binaryTree.getRoot().getRight().setRight(new Node(90));
+
+        assertEquals(300,binaryTree.findMax(binaryTree.getRoot()));
+
+    }
+
+    @Test
+    public void findMaxFailed(){
+        BinaryTree binaryTree= new BinaryTree();
+
+        binaryTree.setRoot(new Node(300));
+        binaryTree.getRoot().setLeft(new Node(2));
+        binaryTree.getRoot().setRight(new Node(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node(4));
+        binaryTree.getRoot().getLeft().setRight(new Node (67));
+        binaryTree.getRoot().getLeft().setLeft(new Node(50));
+        binaryTree.getRoot().getLeft().setRight(new Node(200));
+        binaryTree.getRoot().getRight().setLeft(new Node(150));
+        binaryTree.getRoot().getRight().setRight(new Node(90));
+
+        assertNotEquals(200,binaryTree.findMax(binaryTree.getRoot()));
+
+    }
 }

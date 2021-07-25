@@ -36,3 +36,21 @@ A common type of binary tree is a binary search tree, in which every node has a 
 
   2- Returns: boolean indicating whether or not the value is in the tree at least once.
 
+## Code Challenge 16
+
+**Challenge Summary**
+Given a Binary Tree, find the maximum(or minimum) element in it.
+
+**Whiteboard Process**
+![whiteboard](https://am3pap003files.storage.live.com/y4mF6qPXnuC3sa71SNjfbAyxYRwiUkai6K2qgWeqgc5lZHHXHopsk-a_no_LOdMENZlGEZ-VZR1MePcxLIenjr1hPqM-8siPZ8uAWaY7DggTxIdoEgEHsmwIZwgYu2xKq-qFeLZsimFVdZZvo_OUo6vCyphqggk4wC94hLzHnuIwdDBpCk_43kWmmFraGAxkouPPpQG0h6JixtrmQpNvpxrqQ/code%20challenge%2016.png?psid=1&width=1771&height=780)
+
+## Approach & Efficiency
+
+We must check every node to figure out maximum. So the idea is to traverse the given tree and for every node return maximum of 3 values.
+
+* Node’s key.
+* Maximum in node’s left subtree.
+* Maximum in node’s right subtree.
+
+Time Complexity :  O(n)
+
