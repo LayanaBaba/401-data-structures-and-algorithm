@@ -56,4 +56,22 @@ public class BinaryTree {
     public void setRoot(Node root) {
         this.root = root;
     }
+
+    public int findMax(Node node){
+        if (node ==null){
+            return Integer.MIN_VALUE;
+        }else{
+            int current = node.getKey();
+            int leftCurrent = findMax(node.getLeft());
+            int rightCurrent= findMax(node.getRight());
+
+            if(leftCurrent>current){
+                current= leftCurrent;
+            }
+            if (rightCurrent>current){
+                current=rightCurrent;
+            }
+            return current;
+        }
+    }
 }

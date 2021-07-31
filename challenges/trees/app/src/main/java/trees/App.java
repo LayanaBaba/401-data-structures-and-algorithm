@@ -14,11 +14,16 @@ public class App {
         BinaryTree binaryTree= new BinaryTree();
 
         //Adds nodes to the tree
-        binaryTree.setRoot(new Node(1));
+        binaryTree.setRoot(new Node(300));
         binaryTree.getRoot().setLeft(new Node(2));
         binaryTree.getRoot().setRight(new Node(3));
         binaryTree.getRoot().getLeft().setLeft(new Node(4));
-//        binaryTree.getRoot().getLeft().setRight(new Node (67));
+        binaryTree.getRoot().getLeft().setRight(new Node (67));
+        binaryTree.getRoot().getLeft().setLeft(new Node(50));
+        binaryTree.getRoot().getLeft().setRight(new Node(200));
+        binaryTree.getRoot().getRight().setLeft(new Node(150));
+        binaryTree.getRoot().getRight().setRight(new Node(90));
+
 
         System.out.println("inorder");
         binaryTree.inOrderTraverse(binaryTree.getRoot());
@@ -40,5 +45,8 @@ public class App {
         System.out.println(binarySearchTree.containsNode(10));
         System.out.println(binarySearchTree.containsNode(5));
         System.out.println(binarySearchTree.containsNode(100));
+
+        System.out.println("Max Node is : " + binaryTree.findMax(binaryTree.getRoot()));
+
     }
 }
