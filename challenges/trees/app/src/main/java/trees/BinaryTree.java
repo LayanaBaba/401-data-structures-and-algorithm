@@ -1,5 +1,7 @@
 package trees;
 
+import org.checkerframework.checker.units.qual.A;
+
 import java.util.ArrayList;
 
 public class BinaryTree {
@@ -7,6 +9,13 @@ public class BinaryTree {
     public ArrayList<Integer> preOrder= new ArrayList<>();
     public ArrayList<Integer> inOrder= new ArrayList<>();
     public ArrayList<Integer> postOrder= new ArrayList<>();
+    public ArrayList<Integer> levelOreder = new ArrayList<>();
+
+    public BinaryTree()
+    {
+        root = null;
+    }
+
 
     public void inOrderTraverse(Node node){
         if (node != null){
@@ -49,6 +58,8 @@ public class BinaryTree {
         return postOrder;
     }
 
+    public ArrayList<Integer> getLevelOreder() {return levelOreder;}
+
     public Node getRoot() {
         return root;
     }
@@ -72,6 +83,38 @@ public class BinaryTree {
                 current=rightCurrent;
             }
             return current;
+        }
+    }
+
+    ///////////////////////////////////////////////
+
+    public void printLevelOrder(){
+        int h = height(root);
+        int i;
+        for (i=1; i<=h; i++){printCurrentLevel(root, i);}
+    }
+
+    public int height(Node root){
+        if (root == null){ return 0;}
+        else{
+            int lheight = height(root.getLeft());
+            int rheight = height(root.getRight());
+
+            if (lheight > rheight){return(lheight+1);}
+            else return(rheight+1);
+        }
+    }
+
+    public void printCurrentLevel (Node root ,int level){
+        if (root == null){return;}
+        if (level == 1) {
+            levelOreder.add(root.getKey());
+            System.out.println(levelOreder);
+        }
+        else if (level > 1){
+            printCurrentLevel(root.getLeft(), level-1);
+            printCurrentLevel(root.getRight(), level-1);
+
         }
     }
 }

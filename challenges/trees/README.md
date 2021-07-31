@@ -54,3 +54,19 @@ We must check every node to figure out maximum. So the idea is to traverse the g
 
 Time Complexity :  O(n)
 
+## Code Challenge 17
+
+**Challenge Summary**
+
+* Write a function called breadth first
+* Return: list of all values in the tree, in the order they were encountered.
+
+**Whiteboard Process**
+![whiteboard](https://am3pap003files.storage.live.com/y4mCq1cEAxJyNo_zsqmg4N8KNNuHnROArMarGxWsnW7q2D6O0xmWhg1udkuwWjWoFtYs0KBgYo9ioPFbMnj9Le-G_V9L3LKKkkUtZ5dSlyup3iiiaOrVWoU3EZc-LfymlwyzKXNj6XWrgGBmU7m6NNaNCtkC_Pj33PLmwzVIbwkzgnz1SSJ4gw4MkcwNfyDa9DVgMfy8VbZxIGaFbJQu2Ga7Q/code%20challenge%2017.png?psid=1&width=1331&height=600)
+
+## Approach & Efficiency
+
+* Create a method printCurrentLevel to print all nodes at a given level.
+* Create printLevelorder method to print level order traversal of the tree .
+
+Time Complexity :  O(n^2)

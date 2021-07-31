@@ -82,8 +82,6 @@ class AppTest {
         binaryTree.setRoot(new Node(300));
         binaryTree.getRoot().setLeft(new Node(2));
         binaryTree.getRoot().setRight(new Node(3));
-        binaryTree.getRoot().getLeft().setLeft(new Node(4));
-        binaryTree.getRoot().getLeft().setRight(new Node (67));
         binaryTree.getRoot().getLeft().setLeft(new Node(50));
         binaryTree.getRoot().getLeft().setRight(new Node(200));
         binaryTree.getRoot().getRight().setLeft(new Node(150));
@@ -100,14 +98,48 @@ class AppTest {
         binaryTree.setRoot(new Node(300));
         binaryTree.getRoot().setLeft(new Node(2));
         binaryTree.getRoot().setRight(new Node(3));
-        binaryTree.getRoot().getLeft().setLeft(new Node(4));
-        binaryTree.getRoot().getLeft().setRight(new Node (67));
         binaryTree.getRoot().getLeft().setLeft(new Node(50));
         binaryTree.getRoot().getLeft().setRight(new Node(200));
         binaryTree.getRoot().getRight().setLeft(new Node(150));
         binaryTree.getRoot().getRight().setRight(new Node(90));
 
         assertNotEquals(200,binaryTree.findMax(binaryTree.getRoot()));
+
+    }
+
+    @Test
+    public void printLevelOrder(){
+        BinaryTree binaryTree= new BinaryTree();
+
+        binaryTree.setRoot(new Node(300));
+        binaryTree.getRoot().setLeft(new Node(2));
+        binaryTree.getRoot().setRight(new Node(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node(50));
+        binaryTree.getRoot().getLeft().setRight(new Node(200));
+        binaryTree.getRoot().getRight().setLeft(new Node(150));
+        binaryTree.getRoot().getRight().setRight(new Node(90));
+
+        binaryTree.printLevelOrder();
+
+        assertEquals("[300, 2, 3, 50, 200, 150, 90]",binaryTree.getLevelOreder()+"");
+
+    }
+
+    @Test
+    public void printLevelOrderFailed(){
+        BinaryTree binaryTree= new BinaryTree();
+
+        binaryTree.setRoot(new Node(300));
+        binaryTree.getRoot().setLeft(new Node(2));
+        binaryTree.getRoot().setRight(new Node(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node(50));
+        binaryTree.getRoot().getLeft().setRight(new Node(200));
+        binaryTree.getRoot().getRight().setLeft(new Node(150));
+        binaryTree.getRoot().getRight().setRight(new Node(90));
+
+        binaryTree.printLevelOrder();
+
+        assertNotEquals("[300, 2, 3, 50, 200, 150]",binaryTree.getLevelOreder()+"");
 
     }
 }
