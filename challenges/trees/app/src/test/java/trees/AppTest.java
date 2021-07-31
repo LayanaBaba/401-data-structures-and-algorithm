@@ -5,6 +5,8 @@ package trees;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import trees.KAryTree.KTree;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -141,5 +143,19 @@ class AppTest {
 
         assertNotEquals("[300, 2, 3, 50, 200, 150]",binaryTree.getLevelOreder()+"");
 
+    }
+
+    @Test
+    public void FizzBuzz(){
+//        KTree kTree = new KTree();
+//        int n = 3;
+//        Node root = new Node( 1);
+////        root.children[0] = new Node( 2);
+////        root.children[1] = new Node( 3);
+////        root.children[2] = new Node( 4);
+////        root.children[0].children[0] = new Node( 5);
+////        root.children[0].children[1] = new Node( 6);
+////        root.children[0].children[2] = new Node( 15);
+//        assertEquals("Buzz", );
     }
 }
