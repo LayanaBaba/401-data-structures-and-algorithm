@@ -3,14 +3,13 @@
  */
 package trees;
 
+ import trees.KAryTree.KNode;
  import trees.KAryTree.KTree;
 
  public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
-    public static void main(String[] args) {
+
+//    public static void main(String[] args) {
 
         //create the binary tree
 //        BinaryTree binaryTree= new BinaryTree();
@@ -56,6 +55,6 @@ package trees;
 //        System.out.println("Sum : " + binarySearchTree.sumOdd(binarySearchTree.getRoot()));
 
 
-    }
+//    }
 
 }

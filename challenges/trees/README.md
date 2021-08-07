@@ -69,4 +69,25 @@ Time Complexity :  O(n)
 * Create a method printCurrentLevel to print all nodes at a given level.
 * Create printLevelorder method to print level order traversal of the tree .
 
-Time Complexity :  O(n^2) :  There are two loops.
+Time Complexity :  O(n^2) 
+
+## Code Challenge 18
+
+**Challenge Summary**
+
+* Write a function called fizz buzz tree, Determine whether or not the value of each node is divisible by 3, 5 or both.
+
+**Whiteboard Process**
+![whiteboard](https://am3pap003files.storage.live.com/y4mJYON2j570X5cWktYjjWSkZdUuo3tZAYyvX9CA3U4YaQnVoin4cKWlytLdU97LyJ_C_GMIL22EANS9xzHAZtlhxPeqgxwuy7l3FNxeNAGedytYReQ8G0lTQ6RL5ba3JT1-0eNjaTj1wNN0w2plA05OnrM_x0Crk4FQXuBvikZ-ukYeYv8gamcO2-enMR_kfcP_EQxuAovziaqvw4TlN3W9g/code%2018.png?psid=1&width=1421&height=706)
+## Approach & Efficiency
+
+We must check every node to figure out the value pf the Nodes. So the idea is to traverse the given tree and for every node print one of 4 values.
+
+* Fizz: If the value is divisible by 3
+* Buzz: If the value is divisible by 5
+* FizzBuzz: If the value is divisible by 3 and 5.
+* Node value: If the value is not divisible by 3 or 5
+
+Time Complexity :  O(n^2)
+O(n): for loop
+O(n): recursion
