@@ -3,9 +3,11 @@
 
 **Challenge Summary**
 
-*Write a function that sort an array element.
+* Write a function that sort an array element.
+
 **Whiteboard Process**
-![whiteboard](https://am3pap003files.storage.live.com/y4mJYON2j570X5cWktYjjWSkZdUuo3tZAYyvX9CA3U4YaQnVoin4cKWlytLdU97LyJ_C_GMIL22EANS9xzHAZtlhxPeqgxwuy7l3FNxeNAGedytYReQ8G0lTQ6RL5ba3JT1-0eNjaTj1wNN0w2plA05OnrM_x0Crk4FQXuBvikZ-ukYeYv8gamcO2-enMR_kfcP_EQxuAovziaqvw4TlN3W9g/code%2018.png?psid=1&width=1421&height=706)
+![whiteboard](https://am3pap003files.storage.live.com/y4mx4o_cQP5F_0hYxpa2OMedzZztkunjhtkf-yjUCJ6bkzucQIdJwMgFQFG1ctaoovz2DOE6vhyWuaqfkR5jNfluzHxXJfFXr3y7bGibafAXqd5sj7ZKy4Za7NPQBOnj08Odi579_Q4hZUFW3ONVMggWXyfWamNQeIkH6UGqzzscO25p4RVKUZY7wFhXHrazKc8pz-yOniJ6Pc2hva1dOSzGg/code%20challenge%2026.png?psid=1&width=1526&height=709)
+
 ## Approach & Efficiency
 
 
