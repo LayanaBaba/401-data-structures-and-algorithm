@@ -3,9 +3,23 @@
  */
 package BLOG;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+
+import static BLOG.App.sortArr;
 
 class AppTest {
+    @Test
+    public void main(){
+        int arr[]= {8, 4, 23, 42, 16, 15};
+        int sortedArr[]= {4, 8, 15, 16, 23, 42};
+        sortArr(arr);
+        Assertions.assertArrayEquals(sortedArr,arr);
+    }
+
+
+
 
 }
