@@ -3,8 +3,10 @@
  */
 package trees;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import trees.KAryTree.KNode;
+import trees.KAryTree.KTree;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -141,5 +143,39 @@ class AppTest {
 
         assertNotEquals("[300, 2, 3, 50, 200, 150]",binaryTree.getLevelOreder()+"");
 
+    }
+
+    @Test
+    public void FizzBuzz(){
+        KTree kTree = new KTree();
+        int n = 3;
+        KNode root = new KNode(n, 1);
+        root.children[0] = new KNode(n, 2);
+        root.children[1] = new KNode( n,3);
+        root.children[2] = new KNode(n, 4);
+        root.children[0].children[0] = new KNode( n,5);
+        root.children[0].children[1] = new KNode( n,6);
+        root.children[0].children[2] = new KNode( n,15);
+
+        assertNotEquals("[]", kTree.getKtreeArray());
+    }
+
+    @Test
+    public void FizzBuzzFaild(){
+        KTree kTree = new KTree();
+        int n = 3;
+        KNode root = new KNode(n, 1);
+        root.children[0] = new KNode(n, 2);
+        root.children[1] = new KNode( n,3);
+        root.children[2] = new KNode(n, 4);
+        root.children[0].children[0] = new KNode( n,5);
+        root.children[0].children[1] = new KNode( n,6);
+        root.children[0].children[2] = new KNode( n,15);
+
+        assertNotEquals("buzz", kTree.getKtreeArray());
+    }
+
+    private KNode inorder(KNode root) {
+        return  root;
     }
 }

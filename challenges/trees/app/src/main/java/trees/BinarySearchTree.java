@@ -16,6 +16,50 @@ public class BinarySearchTree {
         }
     }
 
+//    public int oddSum(Node current) {
+//        int sum = 0;
+//        if (current != null) {
+//
+//            if (!(current.getKey() % 2 == 0)) {
+//                sum += current.getKey();
+//                sum += oddSum(current.getRight());
+//                sum += oddSum(current.getLeft());
+//            }
+//
+//        }
+//        return sum;
+//    }
+
+    public Node getRoot() {
+        return root;
+    }
+
+    public void setRoot(Node root) {
+        this.root = root;
+    }
+
+    public int sumOdd(Node node){
+        if (node ==null){
+            return 0;
+        }else{
+            int current = node.getKey();
+            int leftCurrent = sumOdd(node.getLeft());
+            int rightCurrent= sumOdd(node.getRight());
+            int sumLeft=0;
+            int sumRight= 0 ;
+            int sum = current ;
+
+            if(leftCurrent%2 !=0){
+                sumLeft += leftCurrent;
+            }
+            if(rightCurrent%2 !=0){
+                sumRight += rightCurrent;
+            }
+            sum += sumLeft+ sumRight;
+            return sum;
+        }
+    }
+
     public boolean containsNode(int key) {
 //        Node current= root;
         return containsNodeRecursive(root, key);
@@ -87,4 +131,5 @@ public class BinarySearchTree {
 //            traverseRight(current,key);
 //        }
 //    }
+
 }
