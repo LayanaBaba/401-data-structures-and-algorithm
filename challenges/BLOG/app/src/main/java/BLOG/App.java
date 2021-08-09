@@ -3,7 +3,6 @@
  */
 package BLOG;
 
-import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
@@ -11,10 +10,10 @@ public class App {
         sortArr(arr);
     }
 
-    public static ArrayList sortArr(int[] arr){
+    public static void sortArr(int[] arr){
            int n = arr.length;
-        ArrayList<Integer> sortedArr= new ArrayList<>();
-        for (int i = 0; i <n-1 ; i++) {
+
+        for (int i = 0; i <n; i++) {
             int min = i;
             for (int j = i+1; j < n; j++) {
                 if(arr[j]< arr[min]){
@@ -24,9 +23,8 @@ public class App {
             int temp = arr [min];
             arr[min]= arr[i];
             arr[i]= temp;
-            sortedArr.add(arr[i]);
+            System.out.println(arr[i]);
+            }
+
         }
-        System.out.println(sortedArr);
-       return sortedArr;
-    }
 }
