@@ -7,10 +7,12 @@
     <list default="true" id="f5980ee6-791e-4c49-8e7c-bd81c8dce969" name="Default Changelist" comment="finished code challenge 16">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/trees/KAryTree/KNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/KAryTree/KTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/KAryTree/KTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/trees/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/trees/AppTest.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
