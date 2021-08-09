@@ -13,3 +13,4 @@
 |    Challenge 12       |[ٍstack-queue-AnimalShelter](challenges/stack-and-queue/README.md)                   |
 |    Challenge 13       |[ٍstack-queue-brackets](challenges/stack-and-queue/README.md)                   |
 |    Challenge 15       |[ٍtrees](challenges/trees/README.md)                   |
+|    Challenge 26       |[blog](challenges/BLOG/README.md)                   |
