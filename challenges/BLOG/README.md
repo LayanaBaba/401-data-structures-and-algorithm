@@ -35,3 +35,24 @@ Time Complexity : O(nLogn)
 Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation.
 
 T(n) = 2T(n/2) + O(n)
+
+## Code Challenge 28
+
+**Challenge Summary**
+
+* Write a function that sort an array element using quick sort approach.
+
+**Whiteboard Process**
+![whiteboard](img/code challenge 28.png)
+
+## Approach & Efficiency
+
+1. An array is divided into subarrays by selecting a pivot element.
+
+2. The left and right subarrays are also divided using the same approach.This process continues until each subarray contains a single element.
+
+Time Complexity : O(nLogn)
+
+Quick Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation.
+
+T(n) = 2T(n/2) + O(n)

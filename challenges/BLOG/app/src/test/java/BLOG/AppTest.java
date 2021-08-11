@@ -27,4 +27,12 @@ class AppTest {
         int sortedArr[] = {4, 8, 15, 16, 23, 42};
         Assertions.assertArrayEquals(sortedArr, sortedArr);
     }
+
+    @Test
+    public void quikSortTest(){
+        int arr[]= {8, 4, 23, 42, 16, 15};
+        App.quikSort(arr, 0, arr.length-1);
+        int sortedArr[] = {4, 8, 15, 16, 23, 42};
+        Assertions.assertArrayEquals(sortedArr, sortedArr);
+    }
 }
