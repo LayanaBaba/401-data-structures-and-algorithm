@@ -4,6 +4,8 @@
 package BLOG;
 
 
+import org.checkerframework.checker.units.qual.A;
+
 import java.util.Arrays;
 
 public class App {
@@ -11,8 +13,50 @@ public class App {
      int arr[]= {8,4,23,42,16,15};
         sortArr(arr);
 
-//        mergeSort( arr);
-//        System.out.println(Arrays.toString(mergeSort(arr)));
+     mergeSort(arr,0,5);
+    }
+
+   static void merge(int Arr[], int start, int mid, int end) {
+
+        int temp[] = new int[end - start + 1];
+
+        int i = start, j = mid+1, k = 0;
+
+        while(i <= mid && j <= end) {
+            if(Arr[i] <= Arr[j]) {
+                temp[k] = Arr[i];
+                k += 1; i += 1;
+            }
+            else {
+                temp[k] = Arr[j];
+                k += 1; j += 1;
+            }
+        }
+
+        while(i <= mid) {
+            temp[k] = Arr[i];
+            k += 1; i += 1;
+        }
+
+        while(j <= end) {
+            temp[k] = Arr[j];
+            k += 1; j += 1;
+        }
+
+        for(i = start; i <= end; i += 1) {
+            Arr[i] = temp[i - start];
+        }
+       System.out.println(Arrays.toString(Arr));
+    }
+
+    static void mergeSort(int Arr[], int start, int end) {
+
+        if(start < end) {
+            int mid = (start + end) / 2;
+            mergeSort(Arr, start, mid);
+            mergeSort(Arr, mid+1, end);
+            merge(Arr, start, mid, end);
+        }
     }
 
     public static void sortArr(int[] arr){
@@ -33,50 +77,4 @@ public class App {
 
         }
 
-//   public static int[] mergeSort(int [] arr){
-//        int n = arr.length;
-//
-//        if(n>1){
-//            int mid = n/2;
-//            int[] left = Arrays.copyOfRange(arr, 0, mid);
-//            int[] right = Arrays.copyOfRange(arr, mid, n);
-//            mergeSort(left);
-//            mergeSort(right);
-//            merge(left, right, arr);
-//
-//        }
-//        return arr;
-//   }
-//
-//
-//    public static void merge(int [] left, int [] right, int [] arr){
-//        int i =0, j=0, k=0;
-//
-//        while (i< left.length && j < right.length){
-//            if (left[i]== right[j]){
-//                arr[k]= left[i];
-//                i = i+1;
-//            }else {
-//                arr[k]=right[j];
-//                j=j+1;
-//            }
-//            k=k+1;
-//
-//
-//        }
-//
-//        if(i== left.length){
-//          while (j< right.length){
-//              arr[k]= right[j];
-//              k=k+1;
-//              j=j+1;
-//          }
-//        }else{
-//            while (i< left.length){
-//                arr[k]= left[i];
-//                k=k+1;
-//                i=i+1;
-//            }
-//        }
-//    }
 }
