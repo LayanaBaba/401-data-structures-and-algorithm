@@ -31,4 +31,4 @@ Quicksort is a sorting algorithm based on the divide and conquer approach where:
 
 ## Trace
 
-![cc26](./img/Blog26.jpg)
+![cc26](./img/Blog28.png)
