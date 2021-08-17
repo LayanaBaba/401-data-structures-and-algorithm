@@ -14,3 +14,4 @@
 |    Challenge 13       |[ٍstack-queue-brackets](challenges/stack-and-queue/README.md)                   |
 |    Challenge 15       |[ٍtrees](challenges/trees/README.md)                   |
 |    Challenge 26       |[blog](challenges/BLOG/README.md)                   |
+|    Challenge 30       |[hashtable](challenges/hashtable/README.md)                   |
