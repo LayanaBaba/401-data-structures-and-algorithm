@@ -141,4 +141,25 @@ public class HashTable<k, v> {
         }
         return false;
     }
+
+    public String firstRepeated(String input){
+        String string[] = input.split(" ");
+        HashTable<String, Integer> setOfWord = new HashTable<>();
+
+        for (int i = 0; i < string.length; i++) {
+            if(setOfWord.contain(string[i])){
+                setOfWord.add(string[i],setOfWord.get(string[i])+1);
+            }else{
+                setOfWord.add(string[i],1);
+            }
+        }
+
+        for(int i =0 ; i< string.length; i++){
+            int count = setOfWord.get(string[i]);
+            if(count>1){
+                return string[i];
+            }
+        }
+        return  "No repetition";
+    }
 }
