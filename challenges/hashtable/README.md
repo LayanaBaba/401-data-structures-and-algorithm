@@ -28,12 +28,29 @@ Write a function called repeated word that finds the first word to occur more th
 - Return: string
 
 ## Whiteboard Process
-![wb](img/code challenge 31.png)
+![wb](./img/codechallenge31.png)
 
 ## Approach & Efficiency
 The idea is to splite the string and store each word and its count in hashmap. Then traverse the string again and for each word of string, check its count in created hashtable.
 
 Time Complexity:  O(n^2): two for loop
+
+Space Complexity:  O(n)
+
+# Challenge 32
+Find all values found to be in 2 binary trees
+Write a function called tree intersection
+- Arguments: two binary trees
+- Return: array
+
+
+## Whiteboard Process
+![wb](./img/CodeChallenge32.png)
+
+## Approach & Efficiency
+Check all the nodes in each tree, if the value of the node in the first tree has the same value of the second tree, would add in the third tree.
+
+Time Complexity:  O(n^2)
 
 Space Complexity:  O(n)
 

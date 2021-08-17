@@ -3,6 +3,9 @@
  */
 package hashtable;
 
+import BinaryTrees.BinaryTree;
+import BinaryTrees.Node;
+
 public class App {
 
     public static void main(String[] args) {
@@ -22,8 +25,30 @@ public class App {
 //        System.out.println(studentAllowences.remove("aaa"));
 //        System.out.println(" the size is => "+ studentAllowences.getSize());
 
-        String input = "Once upon a time, there was a brave princess who...";
-        System.out.println(studentAllowences.firstRepeated(input));
+//        String input = "Once upon a time, there was a brave princess who...";
+//        System.out.println(studentAllowences.firstRepeated(input));
+
+        BinaryTree binaryTree1= new BinaryTree();
+
+        binaryTree1.setRoot(new Node(300));
+        binaryTree1.getRoot().setLeft(new Node(2));
+        binaryTree1.getRoot().setRight(new Node(3));
+        binaryTree1.getRoot().getLeft().setLeft(new Node(50));
+        binaryTree1.getRoot().getLeft().setRight(new Node(200));
+        binaryTree1.getRoot().getRight().setLeft(new Node(150));
+        binaryTree1.getRoot().getRight().setRight(new Node(90));
+
+        BinaryTree binaryTree2= new BinaryTree();
+
+        binaryTree2.setRoot(new Node(1));
+        binaryTree2.getRoot().setLeft(new Node(0));
+        binaryTree2.getRoot().setRight(new Node(7));
+        binaryTree2.getRoot().getLeft().setLeft(new Node(90));
+        binaryTree2.getRoot().getLeft().setRight(new Node(8));
+        binaryTree2.getRoot().getRight().setLeft(new Node(15));
+        binaryTree2.getRoot().getRight().setRight(new Node(200));
+
+        System.out.println(studentAllowences.repeatedNodes(binaryTree1,binaryTree2));
 
     }
 }
