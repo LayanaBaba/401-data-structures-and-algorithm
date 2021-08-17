@@ -21,3 +21,20 @@ This method should hash the key, and add the key and value pair to the table, ha
 - Arguments: key
 - Returns: Index in the collection for that key.
 
+# Challenge 31
+Write a function called repeated word that finds the first word to occur more than once in a string
+
+- Arguments: string
+- Return: string
+
+## Whiteboard Process
+![wb](img/code challenge 31.png)
+
+## Approach & Efficiency
+The idea is to splite the string and store each word and its count in hashmap. Then traverse the string again and for each word of string, check its count in created hashtable.
+
+Time Complexity:  O(n^2): two for loop
+
+Space Complexity:  O(n)
+
+

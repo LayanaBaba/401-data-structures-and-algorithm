@@ -8,19 +8,22 @@ public class App {
     public static void main(String[] args) {
         HashTable<String, Integer> studentAllowences = new HashTable<>();
 
-        studentAllowences.add("aaa", 300);
-        studentAllowences.add("bbb", 400);
-        studentAllowences.add("kkkk", 3510);
-        studentAllowences.add("jjjj", 3004);
+//        studentAllowences.add("aaa", 300);
+//        studentAllowences.add("bbb", 400);
+//        studentAllowences.add("kkkk", 3510);
+//        studentAllowences.add("jjjj", 3004);
+//
+//        System.out.println(" the size is => "+ studentAllowences.getSize());
+//        System.out.println( studentAllowences.get("aaa"));
+//        System.out.println( studentAllowences.get("kkkk"));
+//        System.out.println( studentAllowences.contain("kkkk"));
+//        System.out.println( studentAllowences.contain("sss"));
+//
+//        System.out.println(studentAllowences.remove("aaa"));
+//        System.out.println(" the size is => "+ studentAllowences.getSize());
 
-        System.out.println(" the size is => "+ studentAllowences.getSize());
-        System.out.println( studentAllowences.get("aaa"));
-        System.out.println( studentAllowences.get("kkkk"));
-        System.out.println( studentAllowences.contain("kkkk"));
-        System.out.println( studentAllowences.contain("sss"));
-
-        System.out.println(studentAllowences.remove("aaa"));
-        System.out.println(" the size is => "+ studentAllowences.getSize());
+        String input = "Once upon a time, there was a brave princess who...";
+        System.out.println(studentAllowences.firstRepeated(input));
 
     }
 }

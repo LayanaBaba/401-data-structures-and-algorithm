@@ -62,4 +62,18 @@ class AppTest {
 
         assertEquals(1,test.getSize());
     }
+
+    @Test
+    public void repeatedWordTest(){
+        String input = "Once upon a time, there was a brave princess who...";
+        String expected = test.firstRepeated(input);
+        assertEquals("a", expected);
+    }
+
+    @Test
+    public void repeatedWordFailedTest(){
+        String input = "Once upon a time, there was a brave princess who...";
+        String expected = test.firstRepeated(input);
+        assertNotEquals("Once", expected);
+    }
 }
