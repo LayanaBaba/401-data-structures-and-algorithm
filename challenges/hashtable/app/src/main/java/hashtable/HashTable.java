@@ -1,5 +1,7 @@
 package hashtable;
 
+import BinaryTrees.BinaryTree;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -142,7 +144,7 @@ public class HashTable<k, v> {
         }
         return false;
     }
-
+////////////////////////////////////////////////////
     public String firstRepeated(String input){
         String string[] = input.split(" ");
         HashTable<String, Integer> setOfWord = new HashTable<>();
@@ -163,6 +165,7 @@ public class HashTable<k, v> {
         }
         return  "No repetition";
     }
+
 
     public List<k> keys(){
         List<k> keys = new ArrayList<>();
@@ -186,5 +189,23 @@ public class HashTable<k, v> {
 
         }
         return list;
+
+    //////////////////////////////////////////////////
+
+    public List<Integer> repeatedNodes(BinaryTree firstTree, BinaryTree secondTree){
+        List<Integer> list1= firstTree.inOrderTraverse(firstTree.getRoot());
+        List<Integer> list2= secondTree.inOrderTraverse(secondTree.getRoot());
+
+        List<Integer> list3 = new ArrayList<>();
+
+        for (int i = 0; i < list1.size(); i++) {
+            for (int j = 0; j < list2.size(); j++) {
+                if (list1.get(i).equals(list2.get(j))) {
+                    list3.add(list1.get(i));
+                }
+            }
+        }
+        return list3;
+
     }
 }

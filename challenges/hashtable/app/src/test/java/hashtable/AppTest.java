@@ -3,6 +3,8 @@
  */
 package hashtable;
 
+import BinaryTrees.BinaryTree;
+import BinaryTrees.Node;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -79,6 +81,7 @@ class AppTest {
     }
 
     @Test
+
     public void leftJoinTest(){
         HashTable<String, String> first = new HashTable<>();
         HashTable<String, String> second = new HashTable<>();
@@ -108,5 +111,44 @@ class AppTest {
         second.add("guide","follow");
 
         assertNotEquals("[[fond, averse], [anger, delight], [guide, usher,]]", test1.leftJoin(first,second).toString());
+
+    public void repeatedNodeTest(){
+        BinaryTree binaryTree1= new BinaryTree();
+
+        binaryTree1.setRoot(new Node(300));
+        binaryTree1.getRoot().setLeft(new Node(2));
+        binaryTree1.getRoot().setRight(new Node(3));
+        binaryTree1.getRoot().getLeft().setLeft(new Node(50));
+
+        BinaryTree binaryTree2= new BinaryTree();
+
+        binaryTree2.setRoot(new Node(1));
+        binaryTree2.getRoot().setLeft(new Node(300));
+        binaryTree2.getRoot().setRight(new Node(7));
+        binaryTree2.getRoot().getLeft().setLeft(new Node(90));
+        binaryTree2.getRoot().getLeft().setRight(new Node(8));
+
+        assertEquals("[300]",test.repeatedNodes(binaryTree1,binaryTree2));
+    }
+
+    @Test
+    public void repeatedNodeFailedTest(){
+        BinaryTree binaryTree1= new BinaryTree();
+
+        binaryTree1.setRoot(new Node(300));
+        binaryTree1.getRoot().setLeft(new Node(2));
+        binaryTree1.getRoot().setRight(new Node(3));
+        binaryTree1.getRoot().getLeft().setLeft(new Node(50));
+
+        BinaryTree binaryTree2= new BinaryTree();
+
+        binaryTree2.setRoot(new Node(1));
+        binaryTree2.getRoot().setLeft(new Node(300));
+        binaryTree2.getRoot().setRight(new Node(7));
+        binaryTree2.getRoot().getLeft().setLeft(new Node(90));
+        binaryTree2.getRoot().getLeft().setRight(new Node(8));
+
+        assertNotEquals("[20]", test.repeatedNodes(binaryTree1,binaryTree2));
+
     }
 }
