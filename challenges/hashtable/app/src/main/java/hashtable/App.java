@@ -9,7 +9,7 @@ import BinaryTrees.Node;
 public class App {
 
     public static void main(String[] args) {
-        HashTable<String, Integer> studentAllowences = new HashTable<>();
+        HashTable<String, String> studentAllowences = new HashTable<>();
 
 //        studentAllowences.add("aaa", 300);
 //        studentAllowences.add("bbb", 400);
@@ -26,6 +26,10 @@ public class App {
 //        System.out.println(" the size is => "+ studentAllowences.getSize());
 
 //        String input = "Once upon a time, there was a brave princess who...";
+
+//        String input = "Taco cat ate a taco";
+//        System.out.println(studentAllowences.firstRepeated(input));
+
 //        System.out.println(studentAllowences.firstRepeated(input));
 
         BinaryTree binaryTree1= new BinaryTree();
@@ -50,5 +54,18 @@ public class App {
 
         System.out.println(studentAllowences.repeatedNodes(binaryTree1,binaryTree2));
 
+
+        HashTable<String, String> first = new HashTable<>();
+        HashTable<String, String> second = new HashTable<>();
+
+        first.add("fond","enamored");
+        first.add("wrath","anger");
+        first.add("guide","usher");
+
+        second.add("fond","averse");
+        second.add("wrath","delight");
+        second.add("guide","follow");
+
+        System.out.println(studentAllowences.leftJoin(first,second));
     }
 }
