@@ -37,4 +37,18 @@ Time Complexity:  O(n^2): two for loop
 
 Space Complexity:  O(n)
 
+# Challenge 33
+Write a function called left join
+Return: The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
+
+## Whiteboard Process
+![wb](../img/codechallenge33.jpg)
+
+## Approach & Efficiency
+Create a method that takes two hashmaps.
+Declare two list, the first one to hold the key and the value of that key for the first and second hashmap, and the second one to hold all of these lists.
+
+Time Complexity:  O(n): for loop
+
+Space Complexity:  O(n)
 

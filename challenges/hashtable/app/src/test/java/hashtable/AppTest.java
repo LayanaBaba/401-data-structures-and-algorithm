@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     private HashTable<String, Integer> test = new HashTable<>();
+    private HashTable<String, String> test1 = new HashTable<>();
     @Test
     public void addTest(){
     test.add("Layana1",1);
@@ -75,5 +76,37 @@ class AppTest {
         String input = "Once upon a time, there was a brave princess who...";
         String expected = test.firstRepeated(input);
         assertNotEquals("Once", expected);
+    }
+
+    @Test
+    public void leftJoinTest(){
+        HashTable<String, String> first = new HashTable<>();
+        HashTable<String, String> second = new HashTable<>();
+
+        first.add("fond","enamored");
+        first.add("wrath","anger");
+        first.add("guide","usher");
+
+        second.add("fond","averse");
+        second.add("wrath","delight");
+        second.add("guide","follow");
+
+        assertEquals("[[fond, enamored, averse], [wrath, anger, delight], [guide, usher, follow]]", test1.leftJoin(first,second).toString());
+    }
+
+    @Test
+    public void leftJoinFailedTest(){
+        HashTable<String, String> first = new HashTable<>();
+        HashTable<String, String> second = new HashTable<>();
+
+        first.add("fond","enamored");
+        first.add("wrath","anger");
+        first.add("guide","usher");
+
+        second.add("fond","averse");
+        second.add("wrath","delight");
+        second.add("guide","follow");
+
+        assertNotEquals("[[fond, averse], [anger, delight], [guide, usher,]]", test1.leftJoin(first,second).toString());
     }
 }

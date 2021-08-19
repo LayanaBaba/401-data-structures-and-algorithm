@@ -14,4 +14,20 @@ public class HashNode<k, v> {
         this.value = value;
         this.hashCode = hashCode;
     }
+
+    public k getKey() {
+        return key;
+    }
+
+    public v getValue() {
+        return value;
+    }
+
+    public int getHashCode() {
+        return hashCode;
+    }
+
+    public HashNode<k, v> getNext() {
+        return next;
+    }
 }
