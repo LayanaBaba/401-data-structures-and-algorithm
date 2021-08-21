@@ -15,3 +15,4 @@
 |    Challenge 15       |[ٍtrees](challenges/trees/README.md)                   |
 |    Challenge 26       |[blog](challenges/BLOG/README.md)                   |
 |    Challenge 30       |[hashtable](challenges/hashtable/README.md)                   |
+|    Challenge 35       |[graph](challenges/graphs/README.md)                   |
