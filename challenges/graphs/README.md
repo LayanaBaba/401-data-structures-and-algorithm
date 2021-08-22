@@ -43,3 +43,24 @@ Include the weight of the connection in the returned collection
 
 * Arguments: none
 * Returns the total number of nodes in the graph
+
+# Challenge 36
+Write the following method for the Graph class:
+
+* breadth first
+* Arguments: Node
+* Return: A collection of nodes in the order they were visited.
+* Display the collection
+
+## Whiteboard Process
+![cc36](img/Graph.jpg)
+
+## Approach & Efficiency
+
+Traversing starts from a selected node (root) and traverse the graph exploring the neighbour nodes (connected to root).
+Moving towards the next-level neighbour nodes.
+
+Big (O)
+
+Time Complexity : O(n+e)
+space Complexity : O(n)
