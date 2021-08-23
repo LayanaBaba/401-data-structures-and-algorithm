@@ -64,3 +64,29 @@ Big (O)
 
 Time Complexity : O(n+e)
 space Complexity : O(n)
+
+# Challenge 37
+Write a function called business trip:
+
+* Arguments: graph, array of city names
+* Return: cost or null
+* Determine whether the trip is possible with direct flights, and how much it would cost.
+
+## Whiteboard Process
+![cc36](img/weighted.jpg)
+
+## Approach & Efficiency
+A Graph is called weighted graph when it has weighted edges which means there are some cost associated with each edge in graph.
+
+Implementation:
+
+Each edge of a graph has an associated numerical value, called a weight.
+Usually, the edge weights are nonnegative integers.
+Weighted graphs may be either directed or undirected.
+The weight of an edge is often referred to as the “cost” of the edge.
+Will create an Edge class to put weight on each edge
+
+Big (O)
+
+Time Complexity : O(n+e)
+space Complexity : O(n)
