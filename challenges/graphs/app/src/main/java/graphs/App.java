@@ -11,14 +11,33 @@ public class App {
     public static void main(String[] args) {
         Graph graph = new Graph();
 
-        graph.addVetrex("Bob");
-        graph.addVetrex("Mary");
-        graph.addVetrex("Alice");
-        graph.addVetrex("Carl");
+//        graph.addVetrex("Bob");
+//        graph.addVetrex("Mary");
+//        graph.addVetrex("Alice");
+//        graph.addVetrex("Carl");
+//
+//        graph.addEdge("Bob","Alice");
+//        graph.addEdge("Bob","Mary");
+//        graph.addEdge("Alice","Carl");
 
-        graph.addEdge("Bob","Alice");
-        graph.addEdge("Bob","Mary");
-        graph.addEdge("Alice","Carl");
+        graph.addVetrex("A");
+        graph.addVetrex("B");
+        graph.addVetrex("C");
+        graph.addVetrex("D");
+        graph.addVetrex("E");
+        graph.addVetrex("F");
+        graph.addVetrex("G");
+        graph.addVetrex("H");
+
+        graph.addEdge("A","D");
+        graph.addEdge("A","B");
+        graph.addEdge("B","D");
+        graph.addEdge("B","C");
+        graph.addEdge("C","G");
+        graph.addEdge("D","F");
+        graph.addEdge("D","H");
+        graph.addEdge("D","E");
+        graph.addEdge("F","H");
 
         System.out.println(graph.printGraph());
         System.out.println(graph.size());
@@ -31,9 +50,9 @@ public class App {
 //        System.out.println(graph.size());
 
         System.out.println("/////////////////////////////////////////////////////////////");
-        System.out.println(graph.dft(graph, "Alice"));
+        System.out.println(graph.dft(graph, "A"));
 
         System.out.println("/////////////////////////////////////////////////////////////");
-        System.out.println(graph.bft(graph, "Alice"));
+        System.out.println(graph.bft(graph, "A"));
     }
 }
