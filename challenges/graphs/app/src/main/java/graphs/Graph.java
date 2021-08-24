@@ -76,6 +76,7 @@ public class Graph {
     }
 
     private List<Vertex> getAdjVertices(String data) {
+
         return  adjVertices.get(new Vertex(data));
     }
 

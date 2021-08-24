@@ -90,3 +90,30 @@ Big (O)
 
 Time Complexity : O(n+e)
 space Complexity : O(n)
+
+# Challenge 38
+Write the following method for the Graph class:
+
+depth first
+
+* Arguments: Node (Starting point of search)
+* Return: A collection of nodes in their pre-order depth-first traversal order
+* Display the collection
+
+## Whiteboard Process
+![cc36](img/dft.jpg)
+
+## Approach & Efficiency
+
+* Traversing starts at the root node and explores as far as possible along each branch before backtracking.
+
+* Create a recursive function that takes the index of the node and a visited array.
+
+* Mark the current node as visited and print the node.
+
+* Traverse all the adjacent and unmarked nodes and call the recursive function with the index of the adjacent node.
+
+Big (O)
+
+Time Complexity : O(n+e)
+space Complexity : O(n)

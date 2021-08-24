@@ -65,6 +65,18 @@ class AppTest {
    }
 
    @Test
+   public void  dftFailed(){
+      Graph graph = new Graph();
+
+      graph.addVetrex("Bob");
+      graph.addVetrex("Mary");
+      graph.addVetrex("Alice");
+      graph.addVetrex("Carl");
+      graph.printGraph();
+      assertNotEquals("[Alice, Bob, Mary]", graph.dft(graph, "Alice").toString());
+   }
+
+   @Test
    public void  bft(){
       Graph graph = new Graph();
 
